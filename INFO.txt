@@ -1,0 +1,21 @@
+# Make sure to have setup an SSH for the github repository
+# You'll also need to setup a SSH key for it on the device.
+
+# Setup SSH Key
+# https://medium.com/featurepreneur/setting-up-ssh-key-with-github-for-ubuntu-cd8f2fabf25b
+# Deploy Keys
+# https://docs.github.com/en/developers/overview/managing-deploy-keys#deploy-keys
+# Using Github Deploy Keys
+# https://simkimsia.com/multiple-github-repos-deploy-keys/
+
+
+SSH Key Setup;
+https://linuxhint.com/generate-ssh-key-ubuntu/
+Linode VPS:
+https://cloud.linode.com/linodes
+Flash:
+https://www.freecodecamp.org/news/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492/
+Nginx:
+https://www.nginx.com/blog/setting-up-nginx/
+https://www.vultr.com/docs/how-to-install-and-configure-nginx-on-a-vultr-cloud-server/
+https://www.digitalocean.com/community/tools/nginx
