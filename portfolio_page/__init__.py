@@ -11,13 +11,6 @@ app = Flask(__name__)
 @app.route("/") # webpage_url/...
 def home():
 	return render_template("index.html")
-	#return "Hello, world!"
-	#return jsonify({"Message" : "Hello, World!"})
-
-@app.route('/templates/<path:file>')
-def serve_results(file):
-	# Haven't used the secure way to send files yet
-	return send_from_directory('/templates/', file)
 
 if __name__ == "__main__":
 	app.run()
