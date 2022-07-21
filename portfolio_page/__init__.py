@@ -6,14 +6,9 @@
 
 from flask import Flask, render_template, send_from_directory
 
-app = Flask(
-	__name__,
-	static_url_path='', 
-	static_folder='portfolio_page/templates',
-	template_folder='portfolio_page/templates'
-)
+app = Flask(__name__)
 
-@app.route("/<path:file>") # webpage_url/...
+@app.route("/templates/<path:file>") # webpage_url/...
 def home():
 	return render_template("index.html")
 	#return "Hello, world!"
@@ -22,7 +17,7 @@ def home():
 @app.route('/templates/<path:file>')
 def serve_results(file):
 	# Haven't used the secure way to send files yet
-	return send_from_directory('templates', file)
+	return send_from_directory('', file)
 
 if __name__ == "__main__":
 	app.run(debug=True)
