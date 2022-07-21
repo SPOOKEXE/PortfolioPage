@@ -4,15 +4,25 @@
 
 # https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04
 
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 
-app = Flask(__name__)
+app = Flask(
+	__name__,
+	static_url_path='', 
+	static_folder='portfolio_page/templates',
+	template_folder='portfolio_page/templates'
+)
 
-@app.route("/") # webpage_url/...
+@app.route("/<path:file>") # webpage_url/...
 def home():
 	return render_template("index.html")
 	#return "Hello, world!"
 	#return jsonify({"Message" : "Hello, World!"})
+
+@app.route('/templates/<path:file>')
+def serve_results(file):
+	# Haven't used the secure way to send files yet
+	return send_from_directory('templates', file)
 
 if __name__ == "__main__":
 	app.run(debug=True)
