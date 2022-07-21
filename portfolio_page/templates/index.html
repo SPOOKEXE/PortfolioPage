@@ -6,18 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio Website</title>
 	<link rel="icon" href="src/jghjghfd.PNG"></link>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='canvas.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='portfolio.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('', filename='canvas.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('', filename='portfolio.css') }}">
 </head>
 
 <body>
 	<body class="center-screen">
-		<script src="{{ url_for('static', filename='libraries/p5.min.js') }}"></script>
-		<script src="{{ url_for('static', filename='src/main.js') }}"></script>
-		<script src="{{ url_for('static', filename='src/particle.js') }}"></script>
-		<script src="{{ url_for('static', filename='src/quadtree.js') }}"></script>
-		<script src="{{ url_for('static', filename='src/rectangle.js') }}"></script>
-		<script src="{{ url_for('static', filename='src/util.js') }}"></script>
+		<script src="{{ url_for('libraries', filename='libraries/p5.min.js') }}"></script>
+		<script src="{{ url_for('src', filename='src/main.js') }}"></script>
+		<script src="{{ url_for('src', filename='src/particle.js') }}"></script>
+		<script src="{{ url_for('src', filename='src/quadtree.js') }}"></script>
+		<script src="{{ url_for('src', filename='src/rectangle.js') }}"></script>
+		<script src="{{ url_for('src', filename='src/util.js') }}"></script>
 	</body>
 	<div class="title-text">
 
