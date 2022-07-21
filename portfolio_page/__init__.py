@@ -8,16 +8,16 @@ from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__)
 
-@app.route("/templates/<path:file>") # webpage_url/...
+@app.route("/") # webpage_url/...
 def home():
 	return render_template("index.html")
 	#return "Hello, world!"
 	#return jsonify({"Message" : "Hello, World!"})
 
-@app.route('/templates/<path:file>')
+@app.route('/<path:file>')
 def serve_results(file):
 	# Haven't used the secure way to send files yet
-	return send_from_directory('', file)
+	return send_from_directory('/', file)
 
 if __name__ == "__main__":
 	app.run(debug=True)
