@@ -1,0 +1,28 @@
+.center-screen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+
+.title-text {
+	position: absolute;
+	z-index: 6;
+}
+
+.title-text:before {
+	content: "SPOOK_EXE PORTFOLIO PAGE";
+	color: white;
+	position: relative;
+	background: none;
+	z-index: 6;
+}
+
+.title-container {
+	position: absolute;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: contain;
+	z-index: 5;
+}
