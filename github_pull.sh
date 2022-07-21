@@ -1,5 +1,8 @@
 # remove folder if exists
 rm -R PortfolioPage
+rm -R portfolio_page
+# kill current webiste
+pm2 kill
 
 # github clone
 git clone git@github.com:SPOOKEXE/PortfolioPage.git
@@ -18,3 +21,4 @@ chmod +x github_pull.sh
 
 # remove empty folder
 rm -R PortfolioPage
+./start_flask.sh
