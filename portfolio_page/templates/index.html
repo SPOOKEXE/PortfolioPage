@@ -12,12 +12,12 @@
 
 <body>
 	<body class="center-screen">
-		<script src="{{ url_for('/libraries', filename='libraries/p5.min.js') }}"></script>
-		<script src="{{ url_for('/src', filename='src/main.js') }}"></script>
-		<script src="{{ url_for('/src', filename='src/particle.js') }}"></script>
-		<script src="{{ url_for('/src', filename='src/quadtree.js') }}"></script>
-		<script src="{{ url_for('/src', filename='src/rectangle.js') }}"></script>
-		<script src="{{ url_for('/src', filename='src/util.js') }}"></script>
+		<script src="{{ url_for('libraries', filename='p5.min.js') }}"></script>
+		<script src="{{ url_for('src', filename='main.js') }}"></script>
+		<script src="{{ url_for('src', filename='particle.js') }}"></script>
+		<script src="{{ url_for('src', filename='quadtree.js') }}"></script>
+		<script src="{{ url_for('src', filename='rectangle.js') }}"></script>
+		<script src="{{ url_for('src', filename='util.js') }}"></script>
 	</body>
 	<div class="title-text">
 
