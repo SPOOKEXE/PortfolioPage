@@ -9,6 +9,8 @@ mv -f PortfolioPage/portfolio_page .
 
 # Move bash scripts out
 mv -f PortfolioPage/bash_scripts/* .
+chmod +x restart_nginx.sh
+chmod +x start_flask.sh
 
 # move github pull out and chmod add
 mv -f PortfolioPage/github_pull.sh .
