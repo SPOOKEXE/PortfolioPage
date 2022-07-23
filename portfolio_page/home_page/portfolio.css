@@ -13,6 +13,7 @@
 
 .title-text:before {
 	content: "SPOOK_EXE PORTFOLIO PAGE";
+	font-size: large;
 	color: white;
 	position: relative;
 	background: none;
